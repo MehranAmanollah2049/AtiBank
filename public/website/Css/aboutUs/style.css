@@ -1,0 +1,123 @@
+
+.containerAboutUs {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.sectionAboutUs {
+
+    width: var(--width);
+    height: auto;
+    float: right;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleAll {
+
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--theme2);
+    font-family: 'yekan_Fat';
+    position: relative;
+}
+.titleAll::after {
+
+    position: absolute;
+    content: "";
+    top: -2rem;
+    border-radius: 0 0 13px 13px;
+    background-color: var(--theme);
+    width: 80%;
+    height: 6px;
+}
+
+.contentAll {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.contentAll img {
+
+    width: 70%;
+    height: auto;
+    float: right;
+    object-fit: cover;
+    border-radius: 20px;
+    height: auto;
+    max-height: 420px;
+}
+
+.contentAll p {
+
+    width: 100%;
+    font-size: 16px;
+    color: var(--text_color2);
+    float: right;
+    line-height: 30px;
+}
+.contentAll p.title {
+
+    width: 100%;
+    font-size: 23px;
+    color: var(--theme2);
+    float: right;
+    font-family: 'yekan_Fat';
+}
+
+
+.CommentsEmpty {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+    padding: 3rem 0 2rem;
+}
+
+.CommentsEmpty svg {
+
+    width: 70px;
+    height: 70px;
+}
+
+.CommentsEmpty span {
+
+    font-size: 18px;
+    color: #A2ACBF;
+    font-family: 'yekan_Bold';
+}
+
+@media(max-width: 800px) {
+
+    .contentAll img {
+
+        width: 100%;
+    }
+}

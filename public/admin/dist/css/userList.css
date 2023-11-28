@@ -1,0 +1,37 @@
+
+.User_content {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 4rem 0;
+}
+
+.Image {
+
+    width: 100px;
+    height: 100px;
+    float: right;
+    border-radius: 50px;
+    border: dashed 1.5px grey;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.User_content .info {
+
+    margin: 0;
+    direction: ltr;
+}
+.User_content .info.name {
+
+    font-family: 'vazir_bold';
+    direction: rtl !important;
+}

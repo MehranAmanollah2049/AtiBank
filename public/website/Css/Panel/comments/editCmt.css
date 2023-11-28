@@ -1,0 +1,104 @@
+
+.EditCon {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3rem 0;
+}
+
+.EditSec {
+
+    width: 450px;
+    height: auto;
+    float: right;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    
+}
+.EditSec form {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+.EditSec .title {
+
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: var(--theme2);
+    font-family: 'morabba_Bold';
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.EditSec .title::after {
+
+    width: 30%;
+    height: 6px;
+    position: absolute;
+    content: "";
+    top: -1.5rem;
+    border-radius: 0 0 13px 13px;
+    background-color: var(--theme);
+}
+
+.EditSec textarea {
+
+    width: 100%;
+    height: 250px !important;
+    border-radius: 13px;
+    background-color: var(--text_color6);
+    padding: 1rem;
+    border: none;
+    outline: none;
+    resize: none;
+    color: var(--theme2);
+    font-size: 15px;
+}
+
+.EditSec button {
+
+    width: 100%;
+    height: 60px;
+    float: right;
+    background-color: var(--theme);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-family: 'yekan_Bold';
+}
+
+.EditSec button:hover {
+
+    background-color: var(--theme2);
+}
+
+.EditSec button svg {
+
+    width: 18px;
+    height: 18px;
+    float: right;
+    fill: #fff;
+    transform: translateY(-1px);
+}

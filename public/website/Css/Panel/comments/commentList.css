@@ -1,0 +1,100 @@
+.AllManageCMT {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    margin-bottom: 150px;
+}
+
+.commentTbCon {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titleAll {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    font-size: 25px;
+    font-family: 'yekan_Fat';
+    color: var(--theme);
+}
+
+html.en .titleAll {
+
+    font-family: 'anton';
+}
+
+.TdAll {
+
+    background-color: #fff;
+    border: none;
+}
+
+.td,
+.th {
+
+    width: calc(100% / 6 - 10px) !important;
+    justify-content: flex-start !important;
+}
+
+html.en .td span {
+
+    font-family: 'roboto', 'yekan_Regular';
+
+}
+
+.td:nth-child(1),
+.th:nth-child(1) {
+
+    justify-content: center !important;
+}
+
+
+.Empty {
+
+    width: 100%;
+    height: calc(100vh - 200px);
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text_color2);
+    font-size: 22px;
+    font-family: 'yekan_Fat';
+}
+
+@media(max-width: 850px) {
+
+    .td,
+    .th {
+
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .td span {
+
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .td:nth-child(1) {
+        padding: 0;
+    }
+}

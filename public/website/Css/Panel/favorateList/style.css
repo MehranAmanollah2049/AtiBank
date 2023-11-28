@@ -1,0 +1,81 @@
+
+.ContentFavCon {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.Empty {
+
+    width: 100%;
+    height: calc(100vh - 230px);
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text_color2);
+    font-size: 22px;
+    font-family: 'yekan_Fat';
+    padding: 0;
+}
+
+.Job_Card {
+
+    width: calc(100% / 3 - 10px);
+    margin-bottom: 50px;
+}
+
+.seeJob:hover {
+
+    background-color: var(--red);
+    border-color: var(--red);
+}
+html.en .seeJob a svg {
+
+    transform: translateY(-3px);
+}
+
+.like_num {
+
+    cursor: auto;
+}
+
+@media(max-width: 1300px) {
+
+    .Job_Card {
+
+        width: calc(100% / 2 - 8px);
+    }
+}
+
+@media(max-width: 1260px) {
+
+    .Job_Card {
+
+        width: calc(100% / 3 - 10px);
+    }
+}
+
+
+@media(max-width: 1000px) {
+
+    .Job_Card {
+
+        width: calc(100% / 2 - 8px);
+    }
+}
+
+@media(max-width: 680px) {
+
+    .Job_Card {
+
+        width: 100%;
+    }
+}

@@ -1,0 +1,445 @@
+.add_Job_from {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    position: relative;
+    padding: 0 3rem;
+}
+
+.UploadJobImageCon {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadPlace {
+
+    width: 100%;
+    height: 350px;
+    float: right;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    border: dashed 2.5px var(--text_color6);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.uploadPlace:hover {
+
+    box-shadow: 0 0 200px 0 rgba(128, 128, 128, 0.06);
+}
+
+.uploadPlace label {
+
+    width: 100%;
+    height: 100%;
+    float: right;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.uploadIcon,
+.deleteBox {
+
+    width: 60px;
+    height: 60px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme);
+    border-radius: 50px;
+}
+
+.uploadIcon svg,
+.deleteBox svg {
+
+    width: 32px;
+    height: 32px;
+    float: right;
+    fill: #fff;
+}
+
+.uploadPlace.uploaded .uploadIcon {
+
+    display: none;
+}
+
+.deleteUploadedFileCon {
+
+    position: absolute;
+    inset: 0;
+    background-color: #f76a6a5e;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.deleteBox {
+
+    background-color: var(--red);
+}
+
+.deleteBox svg {
+
+    width: 27px;
+    height: 27px;
+}
+
+.uploadPlace.uploaded .deleteUploadedFileCon {
+
+    display: flex;
+}
+
+.uploadPlace.uploaded:hover .deleteUploadedFileCon {
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.leaveDrag {
+
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text_color6);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.leaveDrag p {
+
+    font-size: 23px;
+    color: var(--theme2);
+    font-family: 'yekan_Fat';
+    float: right;
+    width: 100%;
+    text-align: center;
+}
+
+.uploadPlace.leave .leaveDrag {
+
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.bottomInts {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ints_sec {
+
+    width: calc(100% / 2 - 10px);
+    height: 60px;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.ints_sec select,
+.ints_sec input {
+
+    width: 100%;
+    height: 100%;
+    float: right;
+    background: transparent;
+    outline: none;
+    border: solid 1.5px var(--text_color6);
+    border-radius: 8px;
+    padding: 0 1rem;
+    color: var(--text_color3);
+    font-size: 13px;
+}
+
+.ints_sec label {
+
+    position: absolute;
+    top: -13px;
+    right: 17px;
+    font-size: 13px;
+    color: var(--text_color2);
+    border-radius: 50px;
+    padding: 0.3rem 0.6rem;
+    background-color: #fff;
+    z-index: 2;
+}
+
+html.en .ints_sec label {
+
+    right: auto;
+    left: 17px;
+}
+
+.textarea_sec {
+
+    width: 100%;
+    height: auto;
+}
+
+.textarea_sec textarea {
+
+    width: 100% !important;
+    min-height: 100px;
+    max-height: 200px;
+    float: right;
+    background: transparent;
+    outline: none;
+    border: solid 1.5px var(--text_color6);
+    border-radius: 8px;
+    padding: 0 1rem;
+    color: var(--text_color3);
+    font-size: 13px;
+    padding: 1.5rem;
+}
+
+.submitBtn {
+
+    width: 100%;
+    height: 60px;
+    float: right;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme);
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'yekan_Bold';
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.submitBtn:hover {
+
+    background-color: var(--theme2);
+}
+
+.ints_sec.phoneNum input {
+
+    direction: ltr !important;
+}
+
+
+.Alerts_sec {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-bottom: 50px;
+}
+
+.title_warning {
+
+    width: 100%;
+    float: right;
+    font-size: 15px;
+    color: var(--theme2);
+    font-family: 'yekan_Bold';
+    margin: 0;
+}
+
+.bottom_alerts {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    position: relative;
+    padding: 1.2rem 1.2rem 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.bottom_alerts::before {
+
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    right: -4px;
+    content: "";
+    background-color: var(--theme);
+    z-index: 2;
+    border-radius: 50px;
+}
+
+.warning_texts {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: 1rem 1.7rem 1rem 0;
+    margin-bottom: 1px;
+}
+
+.warning_texts p {
+
+    float: right;
+    font-size: 16px;
+    color: var(--text_color3);
+}
+
+.warning_texts::after {
+
+    width: 30px;
+    height: 56px;
+    position: absolute;
+    right: -1.2rem;
+    top: -28px;
+    content: "";
+    border-radius: 0 0 15px 0;
+    border-right: solid 2px var(--theme2);
+    border-bottom: solid 2px var(--theme2);
+}
+
+.warning_texts::before {
+
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    right: -1.2rem;
+    background-color: var(--theme2);
+    content: "";
+    top: 0;
+}
+
+.warning_texts:last-child::before {
+
+    display: none;
+}
+
+
+@media(max-width: 1450px) {
+
+    .add_Job_from {
+
+        padding: 0;
+    }
+}
+
+@media(max-width: 1100px) {
+
+    .allJobManage {
+
+        flex-direction: column;
+    }
+
+    .left_job_manage {
+
+        width: 100%;
+    }
+
+    .right_job_manage {
+
+        position: relative;
+        top: auto;
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
+@media(max-width: 600px) {
+
+  
+    .right_job_manage {
+
+        flex-direction: column;
+    }
+    .manage_jobs_btns {
+
+        width: 100%;
+
+    }
+
+}
+
+@media(max-width: 650px) {
+
+    .uploadPlace {
+
+        height: 250px;
+    }
+
+    .ints_sec {
+
+        width: 100%;
+    }
+
+    .warning_texts p {
+
+        font-size: 15px;
+    }
+
+    .left_job_manage {
+
+        padding: 2rem 1.3rem;
+    }
+
+    .warning_texts::before,
+    .warning_texts::after,
+    .bottom_alerts::before {
+
+        display: none;
+    }
+
+    .warning_texts {
+
+        padding: 0.5rem 0;
+    }
+
+    .bottom_alerts {
+
+        padding: 0;
+    }
+
+}
+
+@media(max-width: 350px) {
+
+    .uploadPlace {
+
+        height: 180px;
+    }
+}

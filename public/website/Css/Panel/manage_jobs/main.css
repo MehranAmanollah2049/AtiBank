@@ -1,0 +1,240 @@
+.allJobManage {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.right_job_manage {
+
+    width: 320px;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    position: sticky;
+    top: 120px;
+
+}
+
+.left_job_manage {
+
+    width: calc(100% - 340px);
+    height: auto;
+    float: right;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 14px;
+}
+
+.manage_jobs_btns {
+
+    width: 100%;
+    height: 75px;
+    float: right;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 13px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+
+.manage_jobs_btns a {
+
+    width: 100%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.2rem 0;
+    gap: 15px;
+}
+
+
+.icon_sec {
+
+    width: 60px;
+    height: 50px;
+    float: right;
+    border-radius: 50px 0 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme2);
+    transition: 0.2s ease;
+    position: relative;
+}
+
+html.en .icon_sec {
+
+    border-radius: 0 50px 50px 0;
+}
+
+.icon_sec::after {
+
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50px;
+    position: absolute;
+    content: "";
+    top: -30px;
+    right: 0;
+    box-shadow: 17px 10px 0 5px var(--theme2);
+    transition: 0.2s ease;
+}
+
+html.en .icon_sec::after {
+
+    right: auto;
+    left: 0;
+    box-shadow: -17px 10px 0 5px var(--theme2);
+}
+
+.icon_sec::before {
+
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50px;
+    position: absolute;
+    content: "";
+    bottom: -30px;
+    right: 0;
+    box-shadow: 17px -10px 0 5px var(--theme2);
+    transition: 0.2s ease;
+}
+
+html.en .icon_sec::before {
+
+    right: auto;
+    left: 0;
+    box-shadow: -17px -10px 0 5px var(--theme2);
+}
+
+.icon_sec svg {
+
+    width: 20px;
+    height: 20px;
+    float: right;
+    fill: #fff;
+}
+
+.manage_jobs_btns a span {
+
+    font-size: 15px;
+    font-family: 'morabba_Bold';
+    float: right;
+    color: var(--theme2);
+}
+
+.manage_jobs_btns.active a span {
+
+    color: var(--theme);
+}
+
+.manage_jobs_btns:hover .icon_sec,
+.manage_jobs_btns.active .icon_sec {
+
+    background-color: var(--theme);
+}
+
+.manage_jobs_btns:hover .icon_sec::after,
+.manage_jobs_btns.active .icon_sec::after {
+
+    box-shadow: 17px 10px 0 5px var(--theme);
+}
+
+.manage_jobs_btns:hover .icon_sec::before,
+.manage_jobs_btns.active .icon_sec::before {
+
+    box-shadow: 17px -10px 0 5px var(--theme);
+}
+
+html.en .manage_jobs_btns:hover .icon_sec::after,
+html.en .manage_jobs_btns.active .icon_sec::after {
+
+    box-shadow: -17px 10px 0 5px var(--theme);
+}
+
+html.en .manage_jobs_btns:hover .icon_sec::before,
+html.en .manage_jobs_btns.active .icon_sec::before {
+
+    box-shadow: -17px -10px 0 5px var(--theme);
+}
+
+.Empty {
+
+    margin: 0;
+    padding: 5rem 0;
+}
+
+.change_status {
+
+    width: 100%;
+    float: right;
+    color: var(--theme);
+    text-decoration: underline;
+    margin-top: 30px;
+}
+
+
+@media(max-width: 1100px) {
+
+    .allJobManage {
+
+        flex-direction: column;
+    }
+
+    .left_job_manage {
+
+        width: 100%;
+    }
+
+    .right_job_manage {
+
+        position: relative;
+        top: auto;
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
+@media(max-width: 600px) {
+
+
+    .right_job_manage {
+
+        flex-direction: column;
+    }
+
+    .manage_jobs_btns {
+
+        width: 100%;
+
+    }
+
+}
+
+@media(max-width: 650px) {
+
+
+    .left_job_manage {
+
+        padding: 2rem 1.3rem;
+    }
+
+}
+
+

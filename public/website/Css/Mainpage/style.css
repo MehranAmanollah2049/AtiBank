@@ -1,0 +1,1778 @@
+.header_container {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.7rem 0;
+}
+
+.header_section {
+
+    width: var(--width);
+    height: auto;
+    float: right;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_section .right_sec {
+
+    width: 50%;
+    height: auto;
+    float: right;
+    position: relative;
+}
+
+.header_section .left_sec {
+
+    width: 40%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.header_section .left_sec .header_bg {
+
+    width: 100%;
+    height: 370px;
+    float: right;
+    object-fit: contain;
+    transform: scale(2.1);
+    pointer-events: none;
+}
+
+.users_num {
+
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    width: auto;
+    height: 62px;
+    float: right;
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.9px);
+    -webkit-backdrop-filter: blur(15.9px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 0.8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.users_num img {
+
+    width: auto;
+    height: 100%;
+    float: left;
+    object-fit: contain;
+}
+
+.users_all_num {
+
+    float: left;
+    font-family: 'rokh';
+    color: var(--theme2);
+    font-size: 18px;
+    transform: translateY(2.8px);
+}
+
+html.en .users_all_num {
+
+    transform: translateY(0);
+    font-family: 'Anton';
+}
+
+.welcome_message {
+
+    width: 100%;
+    float: right;
+    font-size: 25px;
+    color: var(--text_color2);
+    font-family: 'yekan_Heavy';
+}
+
+.welcome_message span {
+
+    color: var(--theme);
+    font-family: 'yekan_Heavy';
+}
+
+.header_text {
+
+    font-size: 58px;
+    color: var(--theme2);
+    font-family: 'yekan_Fat';
+    line-height: 73px;
+    float: right;
+    margin: 12px 0;
+}
+
+.header_text span {
+
+    color: var(--theme);
+    font-family: 'yekan_Fat';
+}
+
+html.en .header_text {
+
+    font-family: 'Anton';
+}
+
+html.en .header_text span {
+
+    font-family: 'Anton';
+}
+
+.header_section .right_sec .flash_bg {
+
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: -60px;
+    left: -70px;
+    stroke: var(--text_color2);
+}
+
+html.en .header_section .right_sec .flash_bg {
+
+    left: auto;
+    right: -70px;
+}
+
+.header_text2 {
+
+    width: 85%;
+    float: right;
+    color: var(--text_color3);
+    font-size: 18px;
+}
+
+html.en .header_text2 {
+
+    float: left;
+}
+
+.Btns_header {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.seeJobsBtn {
+
+    width: auto;
+    height: 58px;
+    float: right;
+    background-color: var(--theme);
+    border-radius: 50px;
+    margin-top: 25px;
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 44px 0px #4A6DFF66;
+}
+
+html.en .seeJobsBtn {
+
+    float: left;
+}
+
+.seeJobsBtn a {
+
+    width: auto;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.6rem;
+    color: #fff;
+    gap: 10px;
+
+}
+
+.seeJobsBtn a span {
+
+    font-family: 'yekan_Medium';
+    font-size: 15px;
+    float: left;
+}
+
+html.en .seeJobsBtn a span {
+
+    transform: translateY(0.5px);
+}
+
+.seeJobsBtn a svg {
+
+    width: 17px;
+    height: 17px;
+    float: right;
+    fill: #fff;
+    transform: translateY(-1.5px);
+}
+
+.seeJobsBtn:hover {
+
+    background-color: var(--theme2);
+    box-shadow: none;
+}
+
+
+.seeAdverstingBtn {
+
+    width: auto;
+    height: 58px;
+    float: right;
+    border-radius: 50px;
+    margin-top: 25px;
+    transition: 0.3s ease;
+}
+
+.seeAdverstingBtn a {
+
+    width: auto;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.6rem;
+    color: var(--text_color2);
+    gap: 10px;
+    transition: 0.3s ease;
+
+}
+
+.seeAdverstingBtn a span {
+
+    font-family: 'yekan_Medium';
+    font-size: 16px;
+    float: left;
+}
+
+html.en .seeAdverstingBtn a span {
+
+    transform: translateY(0.5px);
+}
+
+.seeAdverstingBtn a svg {
+
+    width: 17px;
+    height: 17px;
+    float: right;
+    fill: var(--text_color2);
+    transform: translateY(-1.5px);
+    transition: 0.3s ease;
+}
+
+.seeAdverstingBtn:hover a {
+
+    color: var(--theme);
+}
+
+.seeAdverstingBtn:hover a svg {
+
+    fill: var(--theme);
+}
+
+
+/* our_features */
+
+.our_features_container {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6rem 0 8rem;
+    position: relative;
+}
+
+
+.our_features_section {
+
+    width: var(--width);
+    height: auto;
+    float: right;
+}
+
+.our_features_top_section {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our_features_top_section .title {
+
+    font-size: 35px;
+    color: var(--text_color2);
+    font-family: 'yekan_Fat';
+    float: right;
+    width: auto;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our_features_top_section .title::after {
+
+    width: 110%;
+    height: 35%;
+    position: absolute;
+    content: '';
+    bottom: 5px;
+    background-color: #4a6eff7c;
+    z-index: -1;
+    transform: skew(20deg);
+    border-radius: 4px;
+}
+
+html.en .our_features_top_section .title {
+
+    font-family: 'Anton';
+}
+
+.our_features_bottom_section {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 110px;
+    position: relative;
+}
+
+
+.our_features_bottom_section .boxes {
+
+    width: calc(100% / 5 - 15px);
+    height: 210px;
+    float: left;
+    border-radius: 22px;
+    background-color: #fff;
+    box-shadow: 0px 25px 50px 0px rgba(134, 118, 238, 0.088);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: var(--text_color7);
+    position: relative;
+}
+
+
+
+.our_features_bottom_section .boxes svg {
+
+    width: 70px;
+    height: 70px;
+    float: right;
+}
+
+.our_features_texts {
+
+    width: 100%;
+    text-align: center !important;
+    float: right;
+    font-size: 15px;
+    color: var(--theme2);
+    font-family: 'morabba_Bold' !important;
+}
+
+.our_features_bottom_section .boxes:first-child,
+.our_features_bottom_section .boxes:last-child {
+
+    transform: translateY(-80px);
+}
+
+.our_features_bottom_section .boxes:nth-child(2),
+.our_features_bottom_section .boxes:nth-child(4) {
+
+    transform: translateY(-40px);
+}
+
+.best_jobs_container {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.best_jobs_section {
+
+    width: var(--width);
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--text_color6);
+    padding: 2.2rem 3rem 1rem;
+    border-radius: 30px;
+}
+
+.right_best_jobs {
+
+    width: 32%;
+    height: auto;
+    float: right;
+    background-color: transparent;
+}
+
+.left_best_jobs {
+
+    width: calc(100% - 36%);
+    height: auto;
+    float: left;
+    background-color: transparent;
+}
+
+.right_best_jobs .title {
+
+    width: 100%;
+    float: right;
+    font-family: 'yekan_Fat';
+    color: var(--text_color2);
+    font-size: 35px;
+}
+
+html.en .right_best_jobs .title,
+html.en .right_best_jobs .title span {
+
+    font-family: 'Anton';
+}
+
+.right_best_jobs .title span {
+
+    color: var(--theme);
+    font-family: 'yekan_Fat';
+}
+
+.right_best_jobs img {
+
+    width: 90px;
+    height: 90px;
+    float: right;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+html.en .right_best_jobs img {
+
+    float: left;
+}
+
+.right_best_jobs .about {
+
+    width: 100%;
+    float: right;
+    font-size: 15px;
+    color: var(--text_color3);
+}
+
+
+.best_jobs_swiper {
+
+    width: 100%;
+    float: right;
+}
+
+.best_jobs_swiper .swiper-wrapper {
+
+    padding: 2rem 0;
+}
+
+
+
+.about_us_container {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.about_us_section {
+
+    width: var(--width);
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutUs_right {
+
+    width: 40%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.aboutUs_right img {
+
+    width: 100%;
+    height: 320px;
+    float: right;
+    object-fit: contain;
+    transform: scale(1.3);
+    pointer-events: none;
+}
+
+
+.aboutUs_left {
+
+    width: 60%;
+    height: auto;
+    float: left;
+}
+
+.aboutUs_left .title {
+
+    width: 100%;
+    font-size: 35px;
+    float: right;
+    font-family: 'yekan_Fat';
+    color: var(--text_color2);
+}
+
+.aboutUs_left .title span {
+
+    color: var(--theme);
+    font-family: 'yekan_Fat';
+}
+
+html.en .aboutUs_left .title,
+html.en .aboutUs_left .title span {
+
+    font-family: 'Anton';
+}
+
+
+.aboutUs_left .about {
+
+    width: 100%;
+    font-size: 16px;
+    float: right;
+    color: var(--text_color3);
+    line-height: 27px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.seeJobsBtn.KnowMore a svg {
+
+    float: left;
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+}
+
+html.en .seeJobsBtn.KnowMore a svg {
+
+    transform: rotate(180deg) !important;
+}
+
+.instagram_container {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 6rem;
+    margin: 0 0 100px;
+}
+
+.instagram_section {
+
+    width: var(--width);
+    height: auto;
+    float: left;
+    border-radius: 20px;
+    padding: 1rem 1rem 1rem 2rem;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #BC00FC 0%, #F1295E 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+html.en .instagram_section {
+
+    padding: 1rem 2rem 1rem 1rem;
+}
+
+.instagram_section .insta_right {
+
+    width: auto;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.instagram_section .insta_right img {
+
+    width: 200px;
+    height: 200px;
+    float: right;
+    object-fit: contain;
+    margin: -65px 0;
+}
+
+.instagram_section .insta_right .title {
+
+    float: right;
+    font-family: 'morabba_Bold';
+    color: #fff;
+    font-size: 27px;
+    transform: translateY(-0.5px);
+}
+
+html.en .instagram_section .insta_right .title {
+
+    font-family: 'Anton';
+}
+
+.instagram_section .insta_left {
+
+    width: auto;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.followInsta {
+
+    width: auto;
+    height: 55px;
+    float: left;
+    border-radius: 8px;
+    border: solid 1.5px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.followInsta a {
+
+    width: auto;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+    padding: 0 1.5rem;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.followInsta:hover {
+
+    background-color: #fff;
+}
+
+.followInsta:hover a {
+
+    color: var(--text_color2);
+}
+
+.adversting_container {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.adversting_con {
+
+    width: var(--width);
+    height: auto;
+    float: right;
+    position: relative;
+}
+
+.adversting_sec {
+
+    width: 100%;
+    height: 300px;
+    float: right;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.adversting_sec:nth-child(1) {
+
+    background-image: url(/Tools/Images/Ads_images/3-520-min.png);
+}
+
+.adversting_sec:nth-child(2) {
+
+    background-image: url(/Tools/Images/Ads_images/6-520-min.png);
+}
+
+.adversting_sec a {
+
+    width: 100%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: inherit;
+    padding: 1rem;
+}
+
+.adversting_sec a .content_ads {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.9px);
+    -webkit-backdrop-filter: blur(15.9px);
+    border: 1px solid rgba(255, 255, 255, 0.295);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.adversting_sec a .content_ads .title {
+
+    float: right;
+    width: 100%;
+    color: #fff;
+    font-family: 'yekan_Fat';
+    font-size: 17px;
+    text-align: center;
+}
+
+.adversting_swiper {
+
+    padding: 0 0 3rem;
+}
+
+.swiper-pagination {
+
+    position: absolute;
+    height: 30px;
+    bottom: -20px !important;
+}
+
+.swiper-pagination-bullet {
+
+    width: 8px;
+    height: 8px;
+    float: right;
+    border-radius: 50px;
+    background-color: var(--theme);
+    position: relative;
+}
+
+@media(max-width: 1300px) {
+
+    .our_features_bottom_section {
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .our_features_bottom_section .boxes {
+
+        width: 260px;
+        height: 230px;
+        transform: translateY(0) !important;
+    }
+
+    .our_features_bottom_section .boxes {
+
+        margin-bottom: 20px;
+    }
+    
+    .aboutUs_right img {
+
+        transform: scale(1.2);
+    }
+}
+
+@media(max-width: 1100px) {
+
+    .adversting_con {
+
+        flex-wrap: wrap;
+    }
+
+    .adversting_sec {
+
+        width: 100%;
+    }
+}
+
+@media(max-width: 1135px) {
+
+    .header_text {
+
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .welcome_message {
+
+        font-size: 24px;
+    }
+
+    .header_text2 {
+
+        font-size: 17px;
+    }
+
+    .header_section .left_sec .header_bg {
+
+        transform: scale(2);
+    }
+
+    .best_jobs_section {
+
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .left_best_jobs {
+
+        width: 100%;
+    }
+
+    .right_best_jobs {
+
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .right_best_jobs .title,
+    .right_best_jobs .about {
+
+        text-align: center;
+    }
+
+    .our_features_container {
+
+        padding: 6rem 0 2rem;
+    }
+}
+
+@media(max-width: 1015px) {
+
+    html.en .header_section .right_sec .flash_bg {
+
+
+        left: -20px;
+        bottom: -100px;
+    }
+
+    .header_section {
+
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .header_section .right_sec {
+
+        width: 65%;
+    }
+
+    .header_section .left_sec {
+
+        width: 65%;
+    }
+
+    .welcome_message,
+    .header_text,
+    .header_text2 {
+
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .Btns_header {
+        justify-content: center;
+    }
+
+    .header_section .left_sec .header_bg {
+
+        transform: scale(2.1);
+    }
+
+    .about_us_section {
+
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .aboutUs_left {
+
+        width: 80%;
+    }
+}
+
+@media(max-width: 1000px) {
+
+    .instagram_container {
+
+        padding: 6rem 0 5rem;
+    }
+
+    .instagram_section,
+    .instagram_section .insta_right {
+
+        flex-direction: column;
+    }
+
+    .instagram_section .insta_right .title {
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .instagram_section {
+
+        gap: 25px;
+        padding: 2rem 1.5rem;
+    }
+
+    .instagram_section .insta_right img {
+
+        margin: -115px 0 -20px;
+    }
+}
+
+@media(max-width: 900px) {
+
+    .adversting_sec {
+
+        height: 250px;
+    }
+
+    .adversting_sec a .content_ads {
+
+        padding: 0.8rem;
+    }
+
+    .adversting_sec a .content_ads .title {
+
+        font-size: 15px;
+    }
+
+    .right_best_jobs {
+
+        width: 70%;
+    }
+
+    .header_section .right_sec {
+
+        width: 75%;
+    }
+
+    .header_section .left_sec {
+
+        width: 75%;
+    }
+
+    .header_section .left_sec .header_bg {
+
+        transform: scale(2);
+    }
+
+    .our_features_bottom_section .boxes {
+
+        width: calc(100% / 2 - 15px);
+        margin: 0;
+        height: 220px;
+    }
+
+    .our_features_bottom_section .boxes:nth-child(3) {
+
+        width: 100%;
+    }
+
+    .our_features_bottom_section {
+
+        margin: 70px 0 0;
+    }
+}
+
+@media(max-width: 780px) {
+
+
+    .aboutUs_left {
+
+        width: 100%;
+    }
+
+    .header_section .right_sec {
+
+        width: 85%;
+    }
+
+    .header_section .left_sec {
+
+        width: 85%;
+    }
+
+    .header_section .left_sec .header_bg {
+
+        transform: scale(2);
+    }
+
+    .header_section .right_sec .flash_bg {
+
+        left: -20px;
+        bottom: -80px;
+    }
+
+
+    .aboutUs_right {
+
+        padding: 0 0 6rem;
+    }
+}
+
+@media(max-width: 660px) {
+
+
+    .header_section .right_sec {
+
+        width: 100%;
+    }
+
+    .header_section .left_sec {
+
+        width: 100%;
+    }
+
+    .header_section .left_sec .header_bg {
+
+        transform: scale(1.9);
+    }
+
+    .welcome_message {
+
+        font-size: 23px;
+    }
+
+    .header_text {
+
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .header_text2 {
+
+        font-size: 17px;
+    }
+
+    .header_section {
+
+        padding: 3rem 2rem;
+    }
+
+    .right_best_jobs img {
+
+        width: 80px;
+        height: 80px;
+    }
+
+    .right_best_jobs .title {
+
+        font-size: 30px;
+    }
+
+    .right_best_jobs .about {
+
+        font-size: 14px;
+    }
+
+    .right_best_jobs .seeJobsBtn {
+
+        transform: scale(0.90) translateY(-10px);
+    }
+}
+
+@media(max-width: 600px) {
+
+    .aboutUs_right {
+
+        width: 55%;
+    }
+
+    .right_best_jobs {
+
+        width: 90%;
+    }
+
+    .our_features_bottom_section .boxes svg {
+
+        width: 60px;
+        height: 60px;
+    }
+
+    .our_features_texts {
+
+        font-size: 14px;
+    }
+
+    .our_features_bottom_section .boxes {
+
+        height: 200px;
+    }
+
+    .our_features_bottom_section {
+
+        gap: 10px;
+    }
+
+    .our_features_bottom_section .boxes {
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media(max-width: 550px) {
+
+    .aboutUs_left .about {
+
+        font-size: 15px;
+    }
+
+    .aboutUs_left .title {
+
+        font-size: 33px;
+    }
+
+    .header_section .left_sec .header_bg {
+
+        transform: scale(1.7);
+    }
+
+    .welcome_message {
+
+        font-size: 22px;
+    }
+
+    .header_text {
+
+        font-size: 43px;
+        line-height: 60px;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+
+    .aboutUs_right {
+
+        width: 60%;
+    }
+
+    .best_jobs_section {
+
+        padding: 2rem 1rem 0rem;
+    }
+
+    .header_section .left_sec .header_bg {
+
+        transform: scale(1.7);
+    }
+
+    .welcome_message {
+
+        font-size: 22px;
+    }
+
+    .header_text {
+
+        font-size: 39px;
+        line-height: 55px;
+    }
+
+    .header_section {
+
+        padding: 2rem 1rem;
+    }
+
+    .header_section .right_sec .flash_bg {
+
+        left: 0px;
+        bottom: -90px;
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .seeJobsBtn a svg,
+    .seeAdverstingBtn a svg {
+
+        width: 16px;
+        height: 16px;
+    }
+
+    .seeJobsBtn a span,
+    .seeAdverstingBtn a span {
+
+        font-size: 14px;
+    }
+
+    .our_features_bottom_section .boxes svg {
+
+        width: 55px;
+        height: 55px;
+    }
+
+    .our_features_texts {
+
+        font-size: 13px;
+    }
+
+    .our_features_bottom_section .boxes {
+
+        height: 180px;
+    }
+
+}
+
+@media(max-width: 450px) {
+
+    .adversting_sec {
+
+        height: 220px;
+    }
+
+    .instagram_section .insta_right img {
+
+        width: 170px;
+        height: 170px;
+    }
+
+    .instagram_section .insta_right .title {
+
+        font-size: 23px;
+        line-height: 38px;
+    }
+
+    .followInsta {
+
+        height: 50px;
+    }
+
+    .followInsta a {
+
+        font-size: 14px;
+    }
+
+    .aboutUs_right {
+
+        padding: 0 0 2rem;
+    }
+    .aboutUs_right img {
+
+        transform: scale(1.2);
+        height: auto;
+    }
+
+    .aboutUs_right {
+
+        width: 70%;
+    }
+
+    .our_features_bottom_section .boxes {
+
+        height: 170px;
+    }
+
+    .header_container {
+
+        padding: 1.3rem 0 4rem;
+    }
+
+    .header_section {
+
+        gap: 20px;
+    }
+
+    .header_section .left_sec .header_bg {
+
+        transform: scale(1.6);
+        height: 350px;
+    }
+
+    .users_num {
+
+        transform: scale(0.90) translateX(10px);
+    }
+
+    .welcome_message {
+
+        font-size: 20px;
+    }
+
+    .header_text {
+
+        font-size: 37px;
+        line-height: 50px;
+    }
+
+    .header_text2 {
+
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .header_section {
+
+        padding: 2rem 1rem;
+    }
+
+    .header_section .right_sec .flash_bg {
+
+        left: 0px;
+        bottom: -90px;
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .seeJobsBtn a svg,
+    .seeAdverstingBtn a svg {
+
+        width: 16px;
+        height: 16px;
+    }
+
+    .seeJobsBtn a span,
+    .seeAdverstingBtn a span {
+
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 412px) {
+
+    .right_best_jobs {
+
+        width: 100%;
+    }
+
+    .right_best_jobs img {
+
+        width: 70px;
+        height: 70px;
+    }
+
+    .right_best_jobs .title {
+
+        font-size: 28px;
+        line-height: 35px;
+        margin: 10px 0;
+    }
+
+    .right_best_jobs .about {
+
+        font-size: 14px;
+    }
+
+    .our_features_bottom_section .boxes {
+
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+
+    .header_section {
+
+        gap: 20px;
+    }
+
+    .header_section .left_sec .header_bg {
+
+        transform: scale(1.6);
+    }
+
+    .users_num {
+
+        transform: scale(0.90) translateX(10px);
+    }
+
+    .welcome_message {
+
+        font-size: 19px;
+    }
+
+    .header_text {
+
+        font-size: 33px;
+        line-height: 50px;
+    }
+
+    .header_text2 {
+
+        font-size: 15px;
+    }
+
+    .header_section {
+
+        padding: 0 1rem;
+    }
+
+    .header_section .right_sec .flash_bg {
+
+        left: 0px;
+        bottom: -90px;
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .seeJobsBtn a svg,
+    .seeAdverstingBtn a svg {
+
+        width: 16px;
+        height: 16px;
+    }
+
+    .seeJobsBtn a span,
+    .seeAdverstingBtn a span {
+
+        font-size: 14px;
+    }
+
+    .Btns_header {
+
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .seeJobsBtn,
+    .seeAdverstingBtn,
+    .seeJobsBtn a,
+    .seeAdverstingBtn a {
+
+        width: 100%;
+    }
+
+    .seeAdverstingBtn,
+    .seeAdverstingBtn a {
+
+        height: 40px;
+    }
+}
+
+@media(max-width: 360px) {
+
+    .aboutUs_right {
+
+        width: 80%;
+    }
+
+    .aboutUs_right img {
+
+        transform: scale(1);
+        height: 260px;
+    }
+
+    .header_section {
+
+        gap: 20px;
+    }
+
+    .header_section .left_sec .header_bg {
+
+        transform: scale(1.8);
+    }
+
+    .users_num {
+
+        transform: scale(0.90) translateX(10px);
+    }
+
+    .welcome_message {
+
+        font-size: 18px;
+    }
+
+    .header_text {
+
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .header_text2 {
+
+        font-size: 14px;
+    }
+
+    .header_section {
+
+        padding: 0 1rem;
+    }
+
+    .header_section .right_sec .flash_bg {
+
+        left: 0px;
+        bottom: -60px;
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .seeJobsBtn a svg,
+    .seeAdverstingBtn a svg {
+
+        width: 16px;
+        height: 16px;
+    }
+
+    .seeJobsBtn a span,
+    .seeAdverstingBtn a span {
+
+        font-size: 14px;
+    }
+
+    .Btns_header {
+
+        flex-wrap: wrap;
+        gap: 0;
+        transform: scale(0.95);
+    }
+
+    .seeJobsBtn,
+    .seeAdverstingBtn,
+    .seeJobsBtn a,
+    .seeAdverstingBtn a {
+
+        width: 100%;
+    }
+
+    .seeAdverstingBtn,
+    .seeAdverstingBtn a {
+
+        height: 40px;
+    }
+}
+
+@media(max-width: 350px) {
+
+
+    .Job_Banner {
+
+        height: 170px;
+    }
+
+    .seeJob a {
+
+        font-size: 14px;
+    }
+
+    .seeJob a svg {
+
+        width: 16px;
+        height: 16px;
+        transform: translateY(-2px);
+    }
+
+    .header_section .left_sec .header_bg {
+
+        transform: scale(1.78);
+    }
+
+    .welcome_message {
+
+        font-size: 18px;
+    }
+
+    .header_text {
+
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .header_text2 {
+
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 320px) {
+
+    .our_features_top_section .title {
+
+        font-size: 30px;
+    }
+
+    .aboutUs_right {
+
+        width: 100%;
+    }
+
+    .aboutUs_right img {
+
+        transform: scale(1);
+    }
+
+    .welcome_message {
+
+        font-size: 18px;
+    }
+
+    .header_text {
+
+        font-size: 31px;
+        line-height: 45px;
+    }
+
+    .header_text2 {
+
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 311px) {
+
+    .job_propertys {
+
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header_section {
+
+        gap: 0;
+    }
+
+    .header_section .left_sec {
+
+        padding: 0;
+    }
+
+    .users_num {
+        transform: scale(0.80) translateX(10px) translateY(-40px);
+    }
+
+    .welcome_message {
+
+        font-size: 18px;
+    }
+
+    .header_text {
+
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .header_text2 {
+
+        font-size: 14px;
+    }
+
+    .header_section {
+
+        padding: 0;
+    }
+
+    .adversting_sec {
+
+        height: 170px;
+    }
+
+}
+
+@media(max-width: 270px) {
+
+
+    .welcome_message {
+
+        font-size: 17px;
+    }
+
+    .header_text {
+
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    .header_text2 {
+
+        font-size: 13px;
+    }
+
+    .header_section {
+
+        padding: 0;
+    }
+
+}

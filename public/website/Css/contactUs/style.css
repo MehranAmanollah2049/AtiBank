@@ -1,0 +1,566 @@
+
+.containerContactUs {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.containerContactUs_sec {
+
+    width: calc(var(--width) - 250px);
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Header_content {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.Header_content .right {
+
+    width: 50%;
+    height: auto;
+    float: right;
+    position: relative;
+}
+.Header_content .left {
+
+    width: 35%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Header_content .left img {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    position: relative;
+    object-fit: contain;
+}
+.Header_content .right .title {
+
+    width: 100%;
+    font-size: 55px;
+    font-family: 'yekan_Fat';
+    color: var(--theme2);
+    float: right;
+}
+
+html.en .Header_content .right .title {
+
+    font-family: 'anton';
+}
+
+.Header_content .right .about {
+
+    width: 100%;
+    font-size: 19px;
+    font-family: 'yekan_Medium';
+    color: var(--text_color3);
+    float: right;
+}
+
+.SeeMore {
+
+    width: auto;
+    height: 55px;
+    float: right;
+    background-color: var(--theme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 1.6rem;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 25px;
+    color: #fff;
+    font-family: 'yekan_Medium';
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+.SeeMore:hover {
+
+    background-color: var(--theme2);
+}
+html.en .SeeMore {
+
+    float: left;
+}
+
+.SeeMore svg {
+
+    width: 21px;
+    height: 21px;
+    float: right;
+    fill: #fff;
+}
+
+.ContactWaysCon {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 7rem 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+}
+.ContactWaysCon .top_sec {
+
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ContactWaysCon .top_sec .title {
+
+    font-size: 40px;
+    color: var(--theme2);
+    font-family: 'yekan_Fat';
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html.en .ContactWaysCon .top_sec {
+
+    font-family: 'anton';
+}
+.ContactWaysCon .top_sec   .line {
+
+    width: 80%;
+    height: 1.5px;
+    background: var(--theme);
+    position: absolute;
+    bottom: -10px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContactWaysCon .top_sec .line::after {
+
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-color: var(--theme);
+    box-shadow: 0 0 0 5px #fff;
+    border-radius: 50px;
+    content: "";
+}
+
+.bottom_sec {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+
+.bottom_sec:hover .Boxs {
+
+    opacity: 0.5;
+}
+
+.Boxs {
+
+    width: calc(100% / 3 - 15px);
+    height: auto;
+    min-height: 220px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 1rem;
+    transition: 0.2s ease;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.Boxs:hover {
+
+    box-shadow: 0 0 50px 0 rgba(128, 128, 128, 0.07);
+    z-index: 1;
+    opacity: 1 !important;
+}
+.Boxs::after {
+
+    width: 4px;
+    height: 30%;
+    background-color: var(--theme);
+    position: absolute;
+    right: 0;
+    border-radius: 13px 0 0 13px;
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+    transform: scaleY(0.50);
+}
+.Boxs:hover:after {
+
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.Boxs::before {
+
+    width: 4px;
+    height: 30%;
+    background-color: var(--theme);
+    position: absolute;
+    left: 0;
+    border-radius: 0 13px 13px 0;
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+    transform: scaleY(0.50);
+}
+.Boxs:hover:before {
+
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+.Boxs a {
+
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.Boxs .icon {
+
+    width: auto;
+    height: auto;
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Boxs .icon svg {
+
+    width: 42px;
+    height: 42px;
+    float: right;
+    fill: var(--theme);
+}
+.Boxs .icon::after {
+
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #4a6eff10;
+    border-radius: 50px;
+    content: '';
+}
+
+.Boxs .content {
+
+    width: auto;
+    height: 35px;
+    float: right;
+    background-color: #4a6eff10;
+    border-radius: 3px;
+    color: var(--theme);
+    padding: 0.2rem 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+html.en .Boxs .content {
+
+    padding: 0 1rem;
+}
+
+.title_box_contact {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--theme2);
+    font-size: 17px;
+    font-family: 'yekan_Bold';
+}
+
+.ContactWaysCon2 {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.ContactWaysCon2 .title {
+
+    width: 100%;
+    font-size: 25px;
+    color: var(--theme);
+    font-family: 'yekan_Fat';
+    float: right;
+    padding-right: 1.5rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ContactWaysCon2 .title::after {
+
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    border-radius: 50px;
+    background-color: var(--theme);
+    content: '';
+    transform: translateY(-2px);
+}
+html.en .ContactWaysCon2 .title::after {
+
+    right: auto;
+    left: 0;
+    transform: translateY(0);
+}
+html.en .ContactWaysCon2 .title  {
+
+    padding-right: 0;
+    padding-left: 1.5rem;
+    font-family: 'anton';
+}
+
+.ContactWaysCon2 .infos {
+
+    width: 100%;
+    font-size: 18px;
+    color: var(--text_color3);
+    float: right;
+}
+.ContactWaysCon2 .infos.phone {
+
+    direction: ltr;
+}
+.bottom_sec.map {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact_us_form {
+
+    width: 500px;
+    height: auto;
+    float: left;
+    background-color: #fff;
+    padding: 1.5rem 1.3rem;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title_all {
+
+    width: 100%;
+    font-size: 16px;
+    color: var(--text_color3);
+}
+
+.ints {
+
+    width: 100%;
+    height: 52px;
+    border-radius: 12px;
+    background-color: var(--text_color6);
+    padding: 0 1rem;
+    font-size: 14px;
+    color: var(--theme2);
+    border: none;
+    outline: none;
+}
+.ints.phoneNum {
+
+    direction: ltr;
+}
+
+.ints.textarea {
+
+    min-height: 150px;
+    max-height: 230px;
+    padding:  1rem;
+}
+
+.btn_contact {
+
+    width: 100%;
+    height: 60px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme);
+    color: #fff;
+    font-family: 'yekan_Medium';
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+.btn_contact:hover {
+
+    background-color: var(--theme2);
+}
+
+@media(max-width: 1220px) {
+
+    .containerContactUs_sec {
+
+        width: var(--width);
+    }
+}
+
+@media(max-width: 1000px) {
+
+    .Header_content .right .title {
+
+        font-size: 45px;
+
+    }
+    .Header_content .right .about {
+
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 850px) {
+
+    .Header_content {
+
+        flex-direction: column-reverse;
+    }
+    .Header_content .right {
+
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Header_content .right * {
+
+        text-align: center;
+    }
+    .Header_content .left {
+
+        width: 40%;
+    }
+
+    .Boxs {
+
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+
+@media(max-width: 550px) {
+
+
+    .containerContactUs {
+
+        padding: 4rem 0;
+    }
+    .Header_content .right {
+
+        width: 100%;
+    }
+    .Header_content .left {
+
+        width: 50%;
+    }
+
+    .Boxs {
+
+        width: 100%;
+    }
+
+    .Header_content .right .title {
+
+        font-size: 40px;
+
+    }
+    .Header_content .right .about {
+
+        font-size: 16px;
+    }
+    .SeeMore {
+
+        transform: scale(0.92);
+    }
+    .contact_us_form {
+
+        width: 100%;
+    }
+    .ContactWaysCon .top_sec .title {
+
+        font-size: 35px;
+    }
+}

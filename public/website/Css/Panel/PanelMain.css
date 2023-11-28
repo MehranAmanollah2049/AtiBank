@@ -1,0 +1,490 @@
+
+.container_panel {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Right_container_all {
+
+    width: 280px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-arrow-color: transparent;
+    scrollbar-color: var(--text_color3) transparent;
+    scrollbar-width:thin;
+    scrollbar-track-color: transparent;
+    direction: ltr;
+}
+html.en .Right_container_all {
+
+    direction: rtl;
+}
+.Right_container_all::-webkit-scrollbar {
+    width: 3px;
+    background: transparent;
+}
+
+.Right_container_all::-webkit-scrollbar-thumb {
+    background: var(--text_color3);
+    border-radius: 50px;
+}
+
+.Right_container_all::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.Left_container_all {
+
+    width: calc(100% - 280px);
+    height: auto;
+    float: right;
+}
+.topMenuAll_Left {
+
+    width: 100%;
+    height: 90px;
+    float: right;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.3rem 0 2rem;
+    box-shadow: 0 10px 100px 0 rgba(128, 128, 128, 0.068);
+}
+.topMenuAll_Left::after {
+
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50px;
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -40px;
+    box-shadow: 21px -21px 0 5px #fff;
+    pointer-events: none;
+}
+html.en .topMenuAll_Left::after {
+
+    right: auto;
+    left: 0;
+    box-shadow: -21px -21px 0 5px #fff;
+}
+
+.logoWeb {
+
+    width: 100%;
+    height: 65px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoWeb .svgLogo {
+
+    width: 150px;
+    height: auto;
+    float: right;
+    object-fit: contain;
+}
+.MenuBar_options_right {
+
+    width: 100%;
+    min-height: calc(100% - 65px);
+    float: right;
+    padding: 2rem 0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.top_options {
+
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+.MenuBar_options , .MenuBar_options a {
+
+    width: 100%;
+    height: 50px;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.1s;
+}
+.MenuBar_options a {
+    
+    padding: 0 1rem;  
+    gap: 10px;
+}
+.MenuBar_options:hover {
+
+    background-color: var(--text_color7);
+}
+.MenuBar_options a span {
+
+    font-size: 15px;
+    font-family: 'yekan_Medium';
+    float: right;
+    color: var(--theme2);
+    transform: translateY(1.5px);
+}
+html.en .MenuBar_options a span {
+
+    transform: translateY(3px);
+}
+.MenuBar_options a svg {
+
+    width: 17px;
+    height: 17px;
+    float: right;
+    fill: var(--theme2);
+    transform: translateY(0.7px);
+}
+
+.MenuBar_options.contactUs a svg {
+
+    width: 18px;
+    height: 18px;
+    fill: transparent;
+    stroke: var(--theme2);
+}
+
+.MenuBar_options.logOut:hover  {
+
+    background-color: #f76a6a1d;
+}
+.MenuBar_options.logOut a span {
+
+    color: var(--red);
+}
+.MenuBar_options.logOut a svg {
+
+    fill: var(--red);
+}
+
+.MenuBar_options.active::after {
+
+    width: 5px;
+    height: 55%;
+    position: absolute;
+    right: -1.5rem;
+    border-radius: 13px 0 0 13px;
+    content: "";
+    background-color: var(--theme);
+    transform: translateY(-0.6px);
+}
+html.en .MenuBar_options.active::after  {
+
+    right: auto;
+    left: -1.5rem;
+    border-radius: 0 13px 13px 0;
+}
+.MenuBar_options.active a span {
+
+    color: var(--theme);
+}
+
+.MenuBar_options.active a svg {
+
+    fill: var(--theme);
+}
+
+.sayHi {
+
+    font-size: 20px;
+    color: var(--theme2);
+    font-family: 'yekan_Fat';
+    float: right;
+}
+html.en .sayHi {
+
+    font-family: 'anton' , 'yekan_Fat';
+}
+
+.left_boxs {
+
+    width: auto;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.msgAll , .changeLangBtn {
+
+    width: 50px;
+    height: 50px;
+    float: right;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1.5px var(--text_color5);
+    position: relative;
+    cursor: pointer;
+}
+.msgAll svg {
+
+    width: 20px;
+    height: 20px;
+    float: left;
+    fill: var(--theme2);
+}
+.msgAll::after {
+
+    width: auto;
+    height: 17px;
+    background-color: var(--theme);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    content: attr(data-count);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50px;
+    top: -3px;
+    left: 80%;
+    z-index: 3;
+    padding: 0.1rem 0.4rem 0;
+}
+
+html.en .msgAll::after  {
+
+    left: auto;
+    right: 80%;
+}
+
+.msgAll.empty::after {
+
+    display: none;
+}
+.changeLangBtn ion-icon {
+
+    font-size: 20px;
+    color: var(--theme2);
+}
+
+.dropDownLang {
+
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 115%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 0.8rem 0;
+    z-index: 115;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 0 100px 0 #0000000f;
+}
+html.en .dropDownLang {
+
+    left: auto;
+    right: 0;
+}
+
+.changeLangBtn:hover .dropDownLang {
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.langOptions {
+
+    width: 100%;
+    height: 38px;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.langOptions a {
+
+    width: 100%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 14px;
+}
+
+.langOptions:hover {
+
+    background-color: var(--text_color6);
+}
+
+.BottomAll_Left {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 3rem;
+    position: relative;
+}
+
+
+/* ressponsive */
+
+.overlayMenuXS {
+
+    position: fixed;
+    inset: 0;
+    background-color: #00000016;
+    z-index: 2999;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+} 
+
+.ExitMenuXSbTN {
+
+    width: 38px;
+    height: 38px;
+    float: left;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: solid 1.5px var(--text_color5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ExitMenuXSbTN svg {
+
+    width: 14px;
+    height: 14px;
+    float: right;
+    fill: var(--theme2);
+}
+
+.MenuBarXS {
+
+    width: 45px;
+    height: 45px;
+    float: right;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: solid 1.5px var(--text_color5);
+    cursor: pointer;
+}
+.MenuBarXS svg {
+
+    width: 20px;
+    height: 20px;
+    float: right;
+    fill: var(--theme2);
+}
+
+
+@media(max-width: 1260px) {
+
+    .BottomAll_Left {
+
+        padding: 2rem 1.3rem;
+    }
+    .Right_container_all {
+
+        width: 300px;
+        position: fixed;
+        top: 0;
+        right: -200vw;
+        z-index: 3000;
+        transition: 0.3s ease-in-out;
+    }
+    html.en .Right_container_all {
+
+        right: auto;
+        left: -200vw;
+    }
+    .Right_container_all.active {
+
+        right: 0;
+    }
+    html.en .Right_container_all.active {
+
+        left: 0;
+    }
+    .overlayMenuXS.active {
+
+        opacity: 1;
+        visibility: visible;
+    }
+    .Left_container_all {
+
+        width: 100%;
+    }
+    .topMenuAll_Left {
+
+        padding: 0 1.3rem;
+    }
+    .topMenuAll_Left::after {
+
+        display: none;
+    }
+    .logoWeb {
+
+        justify-content: space-between;
+    }
+    .logoWeb .svgLogo {
+
+        width: 130px;
+        height: auto;
+        float: right;
+    }
+    .ExitMenuXSbTN {
+
+        display: flex;
+    }
+    .sayHi {
+
+        display: none;
+    }
+    .MenuBarXS {
+
+        display: flex;
+    }
+}
+
+@media(max-width: 320px) {
+
+    .Right_container_all.active {
+
+        width: 100%;
+    }
+}
+
+
+

@@ -1,0 +1,484 @@
+.AllProfileCon {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    position: relative;
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 2rem;
+    margin-bottom: 50px;
+}
+
+.edit_from {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    position: relative;
+}
+
+.Image_profileCon {
+
+    width: 100%;
+    height: 330px;
+    float: right;
+    border-radius: 13px;
+    background-color: var(--text_color6);
+    background-image: url(https://wallpapercave.com/wp/wp5105149.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.bgAnimate {
+
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+.bgAnimate::after {
+
+    width: 30px;
+    height: 140%;
+    background: rgba(255, 255, 255, 0.107);
+    border-radius: 16px;
+    backdrop-filter: blur(15.9px);
+    -webkit-backdrop-filter: blur(15.9px);
+    border: 1px solid #fff;
+    position: absolute;
+    content: "";
+    top: -20%;
+    right: -100%;
+    transform: rotate(-25deg);
+    animation: moveBg 3.5s linear infinite;
+}
+
+@keyframes moveBg {
+    0% {
+
+        right: -100%;
+    }
+    100% {
+
+        right: 130%;
+    }
+}
+
+.profileUserCon {
+
+    width: 90px;
+    height: 90px;
+    float: right;
+    position: absolute;
+    right: 80px;
+    bottom: -40px;
+    background-color: var(--text_color6);
+    box-shadow: 0 0 0 10px #fff;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profileUserCon::after {
+
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    content: "";
+    border-radius: 50px;
+    background-color: transparent;
+    right: -25px;
+    transform: translateY(-2px);
+    box-shadow: -7px 7px 0 0.5px #fff;
+}
+.profileUserCon::before {
+
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    content: "";
+    border-radius: 50px;
+    background-color: transparent;
+    left: -25px;
+    transform: translateY(-2px);
+    box-shadow: 7px 7px 0 0.5px #fff;
+}
+.profileUserCon label {
+
+    width: 100%;
+    height: 100%;
+    float: right;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.deleteShadow {
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    border-radius: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.deleteShadow svg {
+
+    width: 15px;
+    height: 15px;
+    float: right;
+    fill: #fff;
+}
+.profileUserCon.uploaded .deleteShadow {
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.IntsAllCon {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.ints.twoSide {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.ints.twoSide .right , .ints.twoSide .left {
+
+    width: 50%;
+    height: auto;
+    float: right;
+    border-radius: 10px;
+    border: solid 1.5px var(--text_color5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.ints.twoSide.phone {
+
+    gap: 10px;
+}
+.ints input {
+
+    width: 100%;
+    height: 55px;
+    float: right;
+    border-radius: inherit;
+    padding: 0 1rem;
+    font-size: 13px;
+    color: var(--theme2);
+    background: none;
+    outline: none;
+    border: none;
+}
+.ints label {
+
+    font-size: 12.5px;
+    color: var(--text_color3);
+    position: absolute;
+    padding: 0 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    top: -10px;
+    right: 15px;
+}
+html.en .ints label {
+
+    right: auto;
+    left: 15px;
+    top: -7px;
+    font-size: 12px;
+}
+.ints.twoSide.phone {
+
+    direction: rtl !important;
+}
+.ints.twoSide.phone .right {
+
+    width: calc(100% - 68px);
+}
+.ints.twoSide.phone .right input {
+
+    text-align: left !important;
+    font-family: 'roboto';
+}
+.ints.twoSide.phone .left {
+
+    width: 68px;
+}
+.ints.twoSide.phone .left input {
+
+    text-align: center;
+    font-family: 'roboto';
+    direction: ltr;
+    padding: 0.5rem;
+}
+
+.ints {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.ints:not(.twoSide) {
+
+    border: solid 1.5px var(--text_color5);
+}
+.ints ion-icon {
+
+    position: absolute;
+    left: 1rem;
+    font-size: 20px;
+    color: var(--text_color3);
+    cursor: pointer;
+}
+html.en .ints ion-icon  {
+
+    left: auto;
+    right: 1rem;
+}
+.ints input[type=password] {
+
+    padding-left: 3rem;
+}
+html.en .ints input[type=password] {
+
+    padding-left: 1rem;
+    padding-right: 3rem;
+} 
+.ints .drp_btn {
+
+    width: 100%;
+    height: 55px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 1rem;
+    cursor: pointer;
+    z-index: 500;
+}
+.ints .drp_btn span {
+
+    font-size: 13px;
+    color: var(--text_color3);
+    user-select: none;
+}
+.ints .drp_btn ion-icon {
+
+    font-size: 16px;
+}
+.drps {
+
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-height: 138px;
+    overflow-y: auto;
+    background-color: #fff;
+    z-index: 550;
+    border-radius: 8px;
+    box-shadow: 0 0 100px 0 #00000025;
+    right: 0;
+    left: 0;
+    top: 110%;
+    padding: 0.6rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+.drps.active {
+
+    opacity: 1;
+    visibility: visible;
+}
+.drps_option {
+
+    width: 100%;
+    height: 40px;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--theme2);
+    padding: 0 0.8rem;
+}
+.drps_option:hover {
+
+    background-color: var(--text_color7);
+}
+.drps_overlay {
+
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 499;
+    display: none;
+}
+.drps_overlay.active {
+
+    display: block;
+}
+.drps .empty {
+
+    width: 100%;
+    height: 70px;
+    float: right;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text_color3);
+}
+
+.signUpBtn {
+
+    width: auto;
+    height: 60px;
+    float: left;
+    background-color: var(--theme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 44px 0px #4A6DFF66;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'yekan_Medium';
+    padding: 0 1.7rem;
+}
+
+.signUpBtn:hover {
+
+    background-color: var(--theme2);
+    box-shadow: none;
+}
+
+
+
+
+
+@media(max-width: 600px) {
+
+    .Image_profileCon {
+
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profileUserCon {
+
+        right: auto;
+    }
+}
+
+
+@media(max-width: 500px) {
+
+
+    .signUpBtn {
+
+        width: 100%;
+    }
+    .AllProfileCon {
+
+        padding: 1rem;
+    }
+   
+}
+
+@media(max-width: 400px) {
+
+    .ints.twoSide.confrim {
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ints.twoSide.confrim input {
+
+        width: 65px;
+    }
+
+    .dropDownLang {
+
+        left: auto;
+    }
+    html.en .dropDownLang {
+
+        right: auto;
+    }
+    .dropDownLang {
+
+        box-shadow: 0 0 100px 0 #00000025;
+    }
+}
+
+@media(max-width: 470px) {
+
+
+    .ints.twoSide.user_info , .ints.twoSide.dropDowns {
+
+        flex-direction: column;
+    }
+    .ints.twoSide.user_info .right , .ints.twoSide.user_info .left ,  .ints.twoSide.dropDowns .right , .ints.twoSide.dropDowns .left {
+
+        width: 100%;
+    }
+    .drps {
+
+        max-height: 150px;
+        top: auto;
+        bottom: 110%;
+    }
+}

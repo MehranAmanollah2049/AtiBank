@@ -1,0 +1,772 @@
+.containerAllJobs {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0 8rem;
+    margin: 0 0 60px;
+}
+
+.AllJobs_section {
+
+    width: var(--width);
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+
+}
+
+.AllJobs_section .right_all {
+
+    width: 280px;
+    height: auto;
+    float: right;
+}
+
+.AllJobs_section .left_all {
+
+    width: calc(100% - 280px);
+    height: auto;
+    float: left;
+}
+
+.AllJobs_section .left_all .JobsAll {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+
+.Job_Card {
+
+    width: calc(100% / 3 - 10px);
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+.arrow-pagination-btn:hover svg {
+
+    fill: var(--theme);
+}
+
+.arrow-pagination-btn.back-btn svg {
+
+    transform: rotate(180deg);
+}
+
+.filter_all_form {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filter_box_con {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 0rem 1rem;
+}
+
+.filter_box_top {
+
+    width: 100%;
+    height: 65px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 0.4rem;
+    border-bottom: solid 1.5px transparent;
+    transition: 0.2s ease;
+}
+
+.filter_box_top .right {
+
+    width: auto;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter_box_top .right svg {
+
+    width: 15px;
+    height: 18px;
+    float: right;
+    transform: translateY(-1.5px);
+}
+
+.filter_box_top .right p {
+
+    font-size: 15px;
+    color: var(--theme2);
+    font-family: 'yekan_Bold';
+    user-select: none;
+}
+
+html.en .filter_box_top .right p {
+
+    transform: translateY(1px);
+}
+
+.filter_box_top svg {
+
+    width: 16px;
+    height: 16px;
+    float: left;
+    stroke: var(--theme2);
+    transition: 0.2s ease;
+}
+
+.filter_box_con.active .filter_box_top svg.arrow {
+
+    transform: rotate(-180deg);
+}
+
+.filter_box_con.active .filter_box_top {
+
+    height: 75px;
+    border-color: var(--text_color6);
+}
+
+.filter_box_bottom {
+
+    width: 100%;
+    height: 0;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 0.2s ease;
+    padding: 0 0.4rem;
+    overflow: hidden;
+}
+.filter_box_con.active .filter_box_bottom {
+
+    padding: 1rem 0.4rem;
+}
+
+.filter_content_sec {
+
+    width: 100%;
+    height: auto;
+    max-height: 410px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-arrow-color: transparent;
+    scrollbar-color: var(--text_color3) transparent;
+    scrollbar-width:thin;
+    scrollbar-track-color: transparent;
+}
+.filter_content_sec::-webkit-scrollbar {
+    width: 3px;
+    background: transparent;
+}
+
+.filter_content_sec::-webkit-scrollbar-thumb {
+    background: var(--text_color3);
+    border-radius: 50px;
+}
+
+.filter_content_sec::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+
+.checkBoxCon {
+
+    width: 100%;
+    height: 34px;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkBoxCon input {
+
+    display: none;
+    pointer-events: none;
+}
+
+.checkBoxCon label {
+
+    width: 100%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.check_box {
+
+    width: 19px;
+    height: 19px;
+    float: right;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text_color6);
+}
+
+.check_box .checked {
+
+    width: 100%;
+    height: 100%;
+    float: right;
+    background-color: var(--theme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.check_box .checked i {
+
+    color: #fff;
+    font-size: 10px;
+    float: right;
+    margin-top: 7px
+}
+.check_box .checked .loading-spinner-checkbox {
+
+    width: 13px;
+    height: 13px;
+    float: right;
+    border-radius: 50px;
+    border: solid 3.3px #ffffff64;
+    border-top-color: #fff;
+    display: none;
+    animation: rotationCheckBox 0.8s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes rotationCheckBox {
+    from {
+
+        transform: rotate(0);
+    }
+    to {
+
+        transform: rotate(360deg);
+    }
+}
+
+.checkBoxCon.loading .check_box .checked .loading-spinner-checkbox  {
+
+    display: block;
+    animation-play-state: running;
+}
+.checkBoxCon.loading .check_box .checked i  {
+
+    display: none;
+}
+
+.checkBoxCon label span {
+
+    float: right;
+    font-size: 15px;
+    color: var(--text_color3);
+    font-family: 'yekan_Medium';
+    user-select: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 40px);
+}
+
+html.en .checkBoxCon label span {
+
+    transform: translateY(2px);
+}
+
+.checkBoxCon input:checked + label .check_box .checked , .checkBoxCon.loading label .check_box .checked {
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.empty_filter {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 0.5rem 0;
+    font-size: 14px;
+    color: var(--text_color3);
+}
+
+.add_filter_btn {
+
+    width: 100%;
+    height: 60px;
+    float: right;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'morabba_Bold';
+    background-color: var(--theme);
+    border: solid 2px transparent;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s ease;
+    font-size: 16px;
+}
+
+.add_filter_btn:hover {
+
+    background-color: #fff;
+    border-color: var(--theme);
+    color: var(--theme);
+}
+
+.emptyResults {
+
+    width: 100%;
+    height: 300px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: var(--text_color3);
+    font-family: 'yekan_Fat';
+}
+
+.FilterXS_container {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.filterXS_btns {
+
+    width: calc(100% / 2 - 8px);
+    height: 55px;
+    float: right;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    border: solid 1.5px var(--text_color5);
+    background-color: var(--theme3);
+    transition: 0.2s ease;
+}
+.filterXS_btns svg {
+
+    width: 18px;
+    height: 18px;
+    float: right;
+    stroke: var(--theme2);
+}
+.filterXS_btns span {
+
+    font-size: 14px;
+    font-family: 'yekan_Medium';
+    color: var(--theme2);
+}
+.filterXS_btns:hover {
+
+    background-color: var(--text_color6);
+}
+
+.filter_all_formXS {
+    
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+.filter_all_formXS.active {
+
+    opacity: 1;
+    visibility: visible;
+}
+.filter_shadow {
+
+    position: absolute;
+    inset: 0;
+    background-color: #2a2d535e;
+}
+.drp_filterXS_box {
+
+    position: absolute;
+    bottom: -100vh;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1.5rem;
+    background-color: var(--theme3);
+    z-index: 100;
+    border-radius: 20px 20px 0 0;
+    max-height: calc(100vh - 30px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-arrow-color: transparent;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0;
+    scrollbar-track-color: transparent;
+    transition: 0.3s ease;
+}
+
+.filter_all_formXS.filter0 .drp_filterXS_box.filter_all {
+
+    bottom: 0;
+}
+.filter_all_formXS.filter1 .drp_filterXS_box.filter_main {
+
+    bottom: 0;
+}
+
+.drp_filterXS_box::-webkit-scrollbar {
+    width: 3px;
+    background: transparent;
+}
+
+.drp_filterXS_box::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 50px;
+}
+
+.drp_filterXS_box::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.drp_filterXS_box .top {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: 0.3s ease;
+    transition-delay: 0.3s;
+}
+.drp_filterXS_box .top ion-icon {
+
+    float: left;
+    font-size: 28px;
+    color: var(--theme2);
+    cursor: pointer;
+
+
+}
+.drp_filterXS_box .top p {
+
+    font-size: 17px;
+    color: var(--theme2);
+    font-family: 'morabba_Bold';
+    float: right;
+    margin: 0;
+}
+.drp_filterXS_box .bottom {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 35px;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: 0.3s ease;
+    transition-delay: 0.3s;
+}
+.drp_filterXS_box .bottom .filter_content_sec {
+
+    max-height: 170px !important;
+}
+
+.drp_filterXS_box .add_filter_btn {
+
+    margin-top: 30px;
+
+}
+
+.filter_all_formXS.active .drp_filterXS_box .top , .filter_all_formXS.active .drp_filterXS_box .bottom  {
+
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media(max-width: 1380px) {
+
+    .Job_Banner {
+
+        height: 170px;
+    }
+
+}
+
+@media(max-width: 1300px) {
+
+    .AllJobs_section .right_all {
+
+        width: 250px;
+        height: auto;
+        float: right;
+    }
+    
+    .AllJobs_section .left_all {
+    
+        width: calc(100% - 250px);
+        height: auto;
+        float: left;
+    }
+
+}
+
+@media(max-width: 1250px) {
+
+    .Job_Card {
+
+        width: calc(100% / 2 - 8px);
+    }
+    .Job_Banner {
+
+        height: 210px;
+    }
+    .AllJobs_section .right_all {
+
+        width: 300px;
+        height: auto;
+        float: right;
+    }
+    
+    .AllJobs_section .left_all {
+    
+        width: calc(100% - 300px);
+        height: auto;
+        float: left;
+    }
+
+}
+
+@media(max-width: 1070px) {
+
+    .Job_Card {
+
+        width: calc(100% / 2 - 8px);
+    }
+    .Job_Banner {
+
+        height: 180px;
+    }
+    .AllJobs_section .right_all {
+
+        width: 270px;
+        height: auto;
+        float: right;
+    }
+    
+    .AllJobs_section .left_all {
+    
+        width: calc(100% - 270px);
+        height: auto;
+        float: left;
+    }
+
+}
+
+@media(max-width: 1000px) {
+
+    .filter_all_formXS {
+
+        display: flex;
+    }
+    .containerAllJobs {
+
+        padding: 4rem 0 5rem;
+    }
+
+    .Job_Card {
+
+        width: calc(100% / 3 - 10px);
+    }
+    .Job_Banner {
+
+        height: 160px;
+    }
+    .AllJobs_section .right_all {
+
+        display: none;
+    }
+    
+    .AllJobs_section .left_all {
+    
+        width: 100%;
+    }
+    .FilterXS_container {
+
+        display: flex;
+    }
+
+}
+
+@media(max-width: 930px) {
+
+    .Job_Card {
+
+        width: calc(100% / 2 - 8px);
+    }
+    .Job_Banner {
+
+        height: 210px;
+    }
+    .AllJobs_section .right_all {
+
+        display: none;
+    }
+    
+    .AllJobs_section .left_all {
+    
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 780px) {
+
+    .Job_Banner {
+
+        height: 180px;
+    }
+
+}
+
+@media(max-width: 700px) {
+
+    .Job_Banner {
+
+        height: 160px;
+    }
+
+}
+
+@media(max-width: 630px) {
+
+    .Job_Banner {
+
+        height: 160px;
+    }
+
+    .Job_Card {
+
+        width: calc(100% / 2 - 8px);
+    }
+
+}
+
+@media(max-width: 560px) {
+
+    .Job_Banner {
+
+        height: 220px;
+    }
+
+    .Job_Card {
+
+        width: 100%;
+    }
+
+    
+
+
+}
+
+@media(max-width: 400px) {
+
+    .FilterXS_container {
+
+        flex-wrap: wrap;
+    }
+    .filterXS_btns {
+
+        width: 100%;
+    }
+}
+
+@media(max-width: 390px) {
+
+    .Job_Banner {
+
+        height: 180px;
+    }
+ 
+    
+}
+
+@media(max-width: 340px) {
+
+    .Job_Banner {
+
+        height: 160px;
+    }
+
+}
+
+@media(max-width: 290px) {
+
+    .Job_Banner {
+
+        height: 150px;
+    }
+
+}

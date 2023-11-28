@@ -1,0 +1,771 @@
+body {
+
+    background-color: #fff;
+}
+
+.containerAll {
+
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SignUp_right {
+
+    width: calc(100% - 40%);
+    height: 100%;
+    float: left;
+    padding: 3rem 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUp_left {
+
+    width: 40%;
+    height: 100%;
+    float: left;
+    background-image: url(/Tools/Images/Website_images/wp5105149.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.SignUp_left::after {
+
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    content: "";
+    background: linear-gradient(to top, var(--text_color1), transparent);
+}
+
+
+.menu_glass {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+.menu_glass .right {
+
+    width: auto;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.glass_menu_btns {
+
+    width: auto;
+    height: 45px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.glass_menu_btns:hover,
+.glass_menu_btns.active {
+
+    background-color: var(--theme) !important;
+}
+
+.glass_menu_btns a {
+
+    width: auto;
+    height: 100%;
+    float: right;
+    padding: 0 1.5rem 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text_color1);
+    font-size: 14px;
+    font-family: 'morabba_Regular';
+    transition: 0.3s ease;
+}
+
+html.en .glass_menu_btns a {
+
+    padding: 0 1.5rem;
+    font-family: 'Roboto';
+}
+
+.glass_menu_btns:hover a,
+.glass_menu_btns.active a {
+
+    color: #fff;
+}
+
+.welcome_section {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome_section .title {
+
+    width: 100%;
+    float: right;
+    font-family: 'morabba_Bold';
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+html.en .welcome_section .title {
+
+    font-family: 'anton';
+}
+
+.welcome_section .about {
+
+    width: 100%;
+    float: right;
+    font-family: 'morabba_Regular';
+    color: #ffffffbc;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.changeLangBtn {
+
+    width: auto;
+    height: 45px;
+    float: left;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.changeLangBtn ion-icon {
+
+    color: var(--text_color1);
+    float: left;
+    font-size: 19px;
+    transition: 0.3s ease;
+}
+
+.changeLangBtn span {
+
+    color: var(--text_color1);
+    font-size: 16px;
+    font-family: 'yekan_Medium';
+    transform: translateY(1.4px);
+    transition: 0.3s ease;
+}
+
+.changeLangBtn:hover {
+
+    background-color: var(--theme);
+}
+
+.changeLangBtn:hover span,
+.changeLangBtn:hover ion-icon {
+
+    color: #fff;
+}
+
+.dropDownLang {
+
+    position: absolute;
+    width: 150px;
+    height: auto;
+    background-color: #fff;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 0.7rem 0;
+    left: 0;
+    top: 113%;
+    transition: 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+html.en .dropDownLang {
+
+    left: auto;
+    right: 0;
+}
+
+.changeLangBtn:hover .dropDownLang {
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropDownLang .langOptions {
+
+    width: 100%;
+    height: 35px;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dropDownLang .langOptions a {
+
+    width: 100%;
+    height: 100%;
+    float: right;
+    padding: 0 1rem;
+    font-size: 14px;
+    color: var(--theme2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dropDownLang .langOptions:hover {
+
+    background-color: var(--text_color7);
+}
+
+.SignUp_right form {
+
+    width: 400px;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.SignUp_right form .title {
+
+    font-size: 28px;
+    color: var(--theme2);
+    float: right;
+    width: 100%;
+    text-align: center;
+    font-family: 'yekan_Fat';
+    margin-bottom: 10px;
+}
+
+
+.signUpBtn {
+
+    width: 100%;
+    height: 60px;
+    float: right;
+    background-color: var(--theme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 44px 0px #4A6DFF66;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'yekan_Medium';
+}
+
+.signUpBtn:hover {
+
+    background-color: var(--theme2);
+    box-shadow: none;
+}
+
+.resendCodeCon {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resendCodeCon a {
+
+    display: block;
+    font-size: 15px;
+    color: var(--theme2);
+    text-decoration: underline;
+    font-family: 'yekan_bold';
+}
+.resendCodeCon a:hover {
+
+    text-decoration: none;
+}
+.resendCodeCon p {
+
+    display: none;
+    font-size: 15px;
+    color: var(--theme2);
+    font-family: 'yekan_bold';
+}
+html.en .resendCodeCon p {
+
+    font-family: 'roboto';
+}
+.resendCodeCon.timer a {
+
+    display: none;
+}
+.resendCodeCon.timer p {
+
+    display: block;
+}
+
+.ints.twoSide {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.ints.twoSide .right , .ints.twoSide .left {
+
+    width: 50%;
+    height: auto;
+    float: right;
+    border-radius: 10px;
+    border: solid 1.5px var(--text_color5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.ints.twoSide.phone {
+
+    gap: 10px;
+}
+.ints input {
+
+    width: 100%;
+    height: 55px;
+    float: right;
+    border-radius: inherit;
+    padding: 0 1rem;
+    font-size: 13px;
+    color: var(--theme2);
+    background: none;
+    outline: none;
+    border: none;
+}
+.ints label {
+
+    font-size: 12.5px;
+    color: var(--text_color3);
+    position: absolute;
+    padding: 0 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    top: -10px;
+    right: 15px;
+}
+html.en .ints label {
+
+    right: auto;
+    left: 15px;
+    top: -7px;
+    font-size: 12px;
+}
+.ints.twoSide.phone {
+
+    direction: rtl !important;
+}
+.ints.twoSide.phone .right {
+
+    width: calc(100% - 68px);
+}
+.ints.twoSide.phone .right input {
+
+    text-align: left !important;
+    font-family: 'roboto';
+}
+.ints.twoSide.phone .left {
+
+    width: 68px;
+}
+.ints.twoSide.phone .left input {
+
+    text-align: center;
+    font-family: 'roboto';
+    direction: ltr;
+    padding: 0.5rem;
+}
+
+.ints {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.ints:not(.twoSide) {
+
+    border: solid 1.5px var(--text_color5);
+}
+.ints ion-icon {
+
+    position: absolute;
+    left: 1rem;
+    font-size: 20px;
+    color: var(--text_color3);
+    cursor: pointer;
+}
+html.en .ints ion-icon  {
+
+    left: auto;
+    right: 1rem;
+}
+.ints input[type=password] {
+
+    padding-left: 3rem;
+}
+html.en .ints input[type=password] {
+
+    padding-left: 1rem;
+    padding-right: 3rem;
+} 
+.ints .drp_btn {
+
+    width: 100%;
+    height: 55px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 1rem;
+    cursor: pointer;
+    z-index: 500;
+}
+.ints .drp_btn span {
+
+    font-size: 13px;
+    color: var(--text_color3);
+    user-select: none;
+}
+.ints .drp_btn ion-icon {
+
+    font-size: 16px;
+}
+.drps {
+
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-height: 138px;
+    overflow-y: auto;
+    background-color: #fff;
+    z-index: 550;
+    border-radius: 8px;
+    box-shadow: 0 0 100px 0 #00000025;
+    right: 0;
+    left: 0;
+    top: 110%;
+    padding: 0.6rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+.drps.active {
+
+    opacity: 1;
+    visibility: visible;
+}
+.drps_option {
+
+    width: 100%;
+    height: 40px;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--theme2);
+    padding: 0 0.8rem;
+}
+.drps_option:hover {
+
+    background-color: var(--text_color7);
+}
+.drps_overlay {
+
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 499;
+    display: none;
+}
+.drps_overlay.active {
+
+    display: block;
+}
+.drps .empty {
+
+    width: 100%;
+    height: 70px;
+    float: right;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text_color3);
+}
+
+
+#particles-js {
+
+    display: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.SignUp_right .changeLangBtn {
+
+    display: none;
+}
+
+.forgot_pass {
+
+    width: 100%;
+   
+    float: right;
+    color: var(--theme);
+    text-decoration: underline;
+    transition: 0.1s;
+}
+.forgot_pass:hover {
+
+    color: var(--theme2);
+    text-decoration: none;
+}
+.ints.twoSide.confrim {
+
+    margin-bottom: 10px;
+    direction: ltr !important;
+}
+.ints.twoSide.confrim input {
+
+    width: calc(100% / 5 - 10px);
+    height: 60px;
+    float: right;
+    border-radius: 10px;
+    border: solid 1.5px var(--text_color5);
+    text-align: center;
+    transition: 0.3s ease;
+    box-shadow: 0 0 100px 0 #00000000;
+    font-family: 'anton';
+    font-size: 17px;
+    color: var(--theme2);
+}
+.ints.twoSide.confrim input:focus {
+
+    border-color: var(--theme);
+    box-shadow: 0 0 100px 0 #00000018;
+}
+
+@media(max-width: 1180px) {
+
+    .SignUp_right {
+
+        width: calc(100% - 50%);
+        padding: 3rem ;
+    }
+    .SignUp_left {
+
+        width: 50%;
+    }
+    .SignUp_right form {
+
+        width: 100%;
+    }
+}
+
+@media(max-width: 1100px) {
+
+    .containerAll {
+
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .SignUp_left {
+
+        width: 100%;
+        height: 250px;
+        background-image: none;
+        background-color: var(--theme3);
+        position: relative;
+        z-index: 100;
+    }
+    .SignUp_left::after {
+
+        display: none;
+    }
+    .welcome_section {
+
+        display: none;
+    }
+    .SignUp_right {
+
+        width: 100%;
+        height: auto;
+        border-radius: 30px 30px 0 0;
+        margin-top: -30px;
+        position: relative;
+        z-index: 5;
+        background-color: #fff;
+        z-index: 200;
+        align-items: flex-start;
+    }
+    .SignUp_right form {
+
+        width: 500px;
+    }
+    #particles-js {
+
+        display: block;
+    }
+}
+
+
+@media(max-width: 500px) {
+
+    .SignUp_right {
+
+        padding: 2rem 1.5rem 5.5rem;
+    }
+    .SignUp_right form {
+
+        width: 100%;
+    }
+   
+}
+
+@media(max-width: 400px) {
+
+    .ints.twoSide.confrim {
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ints.twoSide.confrim input {
+
+        width: 65px;
+    }
+    .menu_glass {
+
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0;
+    }
+    .menu_glass .right {
+
+        width: 100%;
+        height: auto;
+    }
+    .glass_menu_btns {
+
+        width: 50%;
+    }
+    .menu_glass .changeLangBtn {
+
+        display: none;
+    }
+    .SignUp_right .changeLangBtn {
+
+        display: flex;
+    }
+    .dropDownLang {
+
+        left: auto;
+    }
+    html.en .dropDownLang {
+
+        right: auto;
+    }
+    .dropDownLang {
+
+        box-shadow: 0 0 100px 0 #00000025;
+    }
+}
+
+@media(max-width: 370px) {
+
+    .SignUp_left {
+
+        height: 150px;
+    }
+    .ints.twoSide.user_info , .ints.twoSide.dropDowns {
+
+        flex-direction: column;
+    }
+    .ints.twoSide.user_info .right , .ints.twoSide.user_info .left ,  .ints.twoSide.dropDowns .right , .ints.twoSide.dropDowns .left {
+
+        width: 100%;
+    }
+    .drps {
+
+        max-height: 150px;
+        top: auto;
+        bottom: 110%;
+    }
+}
